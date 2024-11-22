@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Birthday Problem Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper header-content">
+            <h1>The Birthday Problem Calculator</h1>
+            <p>Use this calculator to explore the fascinating "Birthday Problem," which expounds the surprising probabilities of shared birthdays among people in a group.</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <form action="#" class="people-form">
+                    <h2>Calculate Probability for Number of People</h2>
+                    <div class="explanation-box">
+                        <p>
+                            Use this tool to calculate the probability of at least two people sharing a birthday within a given group size. Enter the number of people and click "Calculate" to see the probability.
+                        </p>
+                    </div>
+                    <label for="people">Number of People:</label>
+                    <div class="input-wrapper">
+                        <input type="number" min="2" id="people" name="people" placeholder="Enter the number">
+                    </div>
+                    <input type="submit" value="Calculate" class="btn">
+                    <div class="people-answer">
+                        <div class="people-answer__text"></div>
+                        <button class="btn show-unrounded" type="button">Show unrounded number</button>
+                        <div class="people-answer__unrounded"></div>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <form action="#" class="target-form">
+                    <h2>Calculate Fewest People for a Probability</h2>
+                    <div class="explanation-box">
+                        <p>
+                            Use this tool to determine the smallest number of people required to achieve a given probability of at least two people sharing a birthday. Enter a target probability percentage and click "Calculate" to find the result.
+                        </p>
+                    </div>
+                    <label for="target">Target Probability:</label>
+                    <div class="input-wrapper">
+                        <input type="number" step="any" min="0" max="100" id="target" name="target" placeholder="Enter a percentage">
+                        <span class="input-suffix">%</span>
+                    </div>
+                    <input type="submit" value="Calculate" class="btn">
+                    <div class="target-answer"></div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Birthday Problem Calculator. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/dlh89" target="_blank" rel="noopener noreferrer">My GitHub</a> |
+                <a href="https://brightminded.com" target="_blank" rel="noopener noreferrer">BrightMinded</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/2.3.0/big.min.js" integrity="sha512-FRFtxO3b4HKkMcWJ/Yv7tQp+WwWMSPLDlAO5hn1TbNgswaE+RAFESuBbulWR/PNeTq9d4DS/hyEZbcZRAqlYwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
